@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">CareConnect</string>
+    <string-array name="sex">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="civilStatus">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Widowed</item>
+        <item>Legally Separated</item>
+    </string-array>
+
+    <string-array name="bloodType">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>Unknown</item>
+    </string-array>
+    <string name="title_activity_bottom_nav">BottomNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+
+    <string name="title_activity_user_bottom_nav">BottomNav</string>
+    <string name="title_user_home">Home</string>
+    <string name="title_user_dashboard">Dashboard</string>
+    <string name="title_user_notifications">Notifications</string>
+    <string name="user_home">Home</string>
+    <string name="user_chat">Chat</string>
+    <string name="user_logout">Logout</string>
+    <string name="user_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userHome"
+        android:icon="@drawable/nav_home"
+        android:enabled="true"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/userProfile"
+        android:icon="@drawable/nav_user"
+        android:enabled="true"
+        android:title="@string/user_profile" />
+    <item
+        android:id="@+id/userChat"
+        android:icon="@drawable/nav_chat"
+        android:enabled="true"
+        android:title="@string/user_chat" />
+    <item
+        android:id="@+id/userLogout"
+        android:icon="@drawable/nav_logout"
+        android:enabled="true"
+        android:title="@string/user_logout" />
+</menu>

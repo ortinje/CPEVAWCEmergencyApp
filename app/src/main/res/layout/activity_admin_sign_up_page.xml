@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:scrollbars="none"
+        tools:context=".AdminSignUpPage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/gotoAdminLoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/chevron_left_circle">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text="Login"
+                    android:textColor="#17B763"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Admin Registration"
+                android:textColor="@color/gray_dark"
+                android:textSize="20sp"
+                android:fontFamily="@font/mulish_semibold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Please fill out all required fields below. Your information is essential for us to provide quality service."
+                android:fontFamily="@font/mulish"
+                android:textColor="@color/gray"
+                android:textSize="14sp"/>
+
+            <!--Login Credential -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5"
+                    android:layout_gravity="start|center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_medium"
+                    android:gravity="center"
+                    android:text="Login Credential"
+                    android:textColor="@color/grayish"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5"
+                    android:layout_gravity="end|center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Email Address"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                style="@style/CustomEditTextStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Password"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/regPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomEditTextStyle"
+                android:hint="Minimum of 8 characters"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/regPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomEditTextStyle"
+                android:hint="Repeat Password"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <!--User Profile -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5"
+                    android:layout_gravity="start|center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_medium"
+                    android:gravity="center"
+                    android:text="User Profile"
+                    android:textColor="@color/grayish"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5"
+                    android:layout_gravity="end|center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Last Name"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/regLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomEditTextStyle"
+                android:hint="Input Last Name"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="First Name"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/regFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomEditTextStyle"
+                android:hint="Input First Name"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Birthday"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/Birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MM/DD/YYYY"
+                android:focusable="false"
+                style="@style/CustomEditTextStyle"
+                android:inputType="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sex"
+                    style="@style/CustomInputLabel"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start|center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Civil Status"
+                    style="@style/CustomInputLabel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/sexSpinner"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mulish"
+                    style="@style/MySpinnerItemStyle"
+                    android:hint="Sex"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start|center"/>
+
+                <Spinner
+                    android:id="@+id/civilStatusSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext_background"
+                    style="@style/MySpinnerItemStyle"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mulish" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Contact Number"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/RegContactNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex. 09123456789"
+                style="@style/CustomEditTextStyle"
+                android:inputType="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Home Address"
+                style="@style/CustomInputLabel"/>
+
+            <EditText
+                android:id="@+id/RegAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please include house number or street"
+                style="@style/CustomEditTextStyle"
+                android:inputType="none" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#E86C6B"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Submit"
+                android:textColor="#F4F5F5"
+                android:textSize="15sp"
+                app:cornerRadius="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:text="All the information you provide is securely stored within our Barangay system to ensure your safety and privacy."
+                android:fontFamily="@font/mulish"
+                android:textColor="@color/gray"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_loader">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/salmon_dark"
+            android:id="@+id/progress_loader_progressbar" />
+    </FrameLayout>
+
+</RelativeLayout>

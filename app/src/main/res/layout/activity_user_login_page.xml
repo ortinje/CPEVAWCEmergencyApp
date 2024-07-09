@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".LandingPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/changeUserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/chevron_left_circle">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/mulish_bold"
+                android:text="Change User"
+                android:textColor="#17B763"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/emergencyNeedText"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Hello again!"
+            android:textAlignment="center"
+            android:textColor="#404449"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/landingPage_caption"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Welcome back, you’ve been missed!"
+            android:fontFamily="@font/mulish"
+            android:textAlignment="center"
+            android:textColor="#747474"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="235dp"
+            android:layout_height="235dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/women_child_vector" />
+
+        <EditText
+            android:id="@+id/userLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/mulish"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            style="@style/CustomEditTextStyle" />
+
+        <EditText
+            android:id="@+id/userLoginPassword"
+            style="@style/CustomEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Password" />
+
+        <TextView
+            android:id="@+id/userForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Forgot Password?"
+            android:textColor="#17B763"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/userLoginButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#E86C6B"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Login"
+            android:textColor="#F4F5F5"
+            android:textSize="18sp"
+            app:cornerRadius="6dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblExpenseCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Not a member?"
+                android:textColor="@color/grayish"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/gotoUserRegisterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Register Now"
+                android:fontFamily="@font/mulish_semibold"
+                android:textColor="#17B763"
+                android:textSize="16sp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="0dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Are you sure you want to logout?"
+            android:textAlignment="viewStart"
+            android:textColor="@color/grayish"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelLogoutButton"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_height="65dp"
+                android:backgroundTint="@android:color/transparent"
+                android:fontFamily="@font/mulish_semibold"
+                android:textSize="18sp"
+                android:text="Cancel"
+                android:textColor="@color/gray_dark"
+                app:strokeColor="@color/salmon_dark"
+                app:strokeWidth="2dp"
+                app:cornerRadius="0dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmLogoutButton"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="65dp"
+                android:backgroundTint="#E86C6B"
+                app:strokeColor="@color/salmon_dark"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Logout"
+                android:textColor="#F4F5F5"
+                android:textSize="18sp"
+                app:cornerRadius="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

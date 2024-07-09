@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".LandingPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/emergencyNeedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Emergency Help Needed?"
+            android:textAlignment="center"
+            android:textColor="#404449"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/landingPage_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mulish_medium"
+            android:text="Press the button below and help will reach you shortly."
+            android:textAlignment="center"
+            android:textColor="#747474"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/emergencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/emergency_btn"
+            android:contentDescription="Emergency Call" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contactAdminButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="95dp"
+            android:backgroundTint="#E86C6B"
+            app:strokeColor="@color/salmon_dark"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Contact Admin"
+            android:textColor="#F4F5F5"
+            android:textSize="18sp"
+            app:cornerRadius="6dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/generalUserButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/mulish_semibold"
+            android:textSize="18sp"
+            android:text="General User"
+            android:textColor="@color/gray_dark"
+            app:cornerRadius="6dp"
+            app:strokeColor="@color/salmon_dark"
+            app:strokeWidth="2dp"/>
+
+    </LinearLayout>
+</LinearLayout>

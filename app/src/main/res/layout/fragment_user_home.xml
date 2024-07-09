@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F6F8"
+    android:paddingTop="0dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:orientation="vertical"
+    tools:context=".UserHomeFragment"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, "
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp"
+                android:fontFamily="@font/mulish_semibold"/>
+
+            <TextView
+                android:id="@+id/userShowFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp"
+                android:fontFamily="@font/mulish_semibold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We admire your resilience and strength."
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/gray"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/mainEmergencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:src="@drawable/emergency_btn" />
+
+        <TextView
+            android:id="@+id/emergencyNeedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Emergency Help Needed?"
+            android:textAlignment="center"
+            android:textColor="#404449"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/landingPage_caption"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mulish"
+            android:text="Press the button above and help will reach you shortly."
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/mulish_semibold"
+            android:text="Not sure what to do?"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_container"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="20dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_chat"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish_semibold"
+                    android:text="Chat with us"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/grayish"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish"
+                    android:text="We would love to talk to you"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_light"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Nav menu here-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_container"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_hospital"
+                    android:contentDescription="TODO">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hospitals"
+                    android:layout_marginTop="10dp"
+                    style="@style/Header_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Body"
+                    android:text="Lists of all hospitals near me"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_container"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_help"
+                    android:contentDescription="TODO">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seek help"
+                    android:layout_marginTop="10dp"
+                    style="@style/Header_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Body"
+                    android:text="Where to seek help near me"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_container"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_firstaid"
+                    android:contentDescription="TODO">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First aid"
+                    android:layout_marginTop="10dp"
+                    style="@style/Header_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Body"
+                    android:text="First aid while waiting for help "/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_container"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_law"
+                    android:contentDescription="TODO">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RA 9262"
+                    android:layout_marginTop="10dp"
+                    style="@style/Header_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Body"
+                    android:text="Know and assert your rights"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

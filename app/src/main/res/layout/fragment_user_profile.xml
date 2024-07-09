@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8"
+    android:paddingTop="0dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    tools:context=".UserProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_bold"
+            android:textSize="20sp"
+            android:textColor="@color/grayish"
+            android:text="Profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_container"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="20dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/emergency_btn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="24dp">
+
+                <TextView
+                    android:id="@+id/profile_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text="Chat with us"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/grayish"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mulish"
+                    android:text="We would love to talk to you"
+                    android:textAlignment="center"
+                    android:textColor="@color/grayish"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_container"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:padding="20dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_bold"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:text="General" />
+
+            <!--View Profile-->
+            <RelativeLayout
+                android:id="@+id/menuViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/profileImage01"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/minicon_profile" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/profileImage01"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="View Profile"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/grayish"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/mulish"
+                        android:text="User info, health, emergency contact"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:src="@drawable/minicon_arrow" />
+
+            </RelativeLayout>
+
+            <!--User Info-->
+            <RelativeLayout
+                android:id="@+id/menuUserInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/profileImage03"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/minicon_user" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/profileImage03"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="User Info"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/grayish"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/mulish"
+                        android:text="Change user info,  emergency contact"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:src="@drawable/minicon_arrow" />
+
+            </RelativeLayout>
+
+            <!--Health Info-->
+            <RelativeLayout
+                android:id="@+id/menuHealthInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/profileImage04"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/minicon_bandaid"
+                    tools:ignore="DuplicateIds" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/profileImage04"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="Health Info"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/grayish"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/mulish"
+                        android:text="Update health declaratioin"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:src="@drawable/minicon_arrow" />
+
+            </RelativeLayout>
+
+            <!--Emergency Contact-->
+            <RelativeLayout
+                android:id="@+id/menuEmergencyContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/profileImage05"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/minicon_phone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/profileImage05"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="Emergency Contact"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/grayish"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/mulish"
+                        android:text="Change user info,  emergency contact"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:src="@drawable/minicon_arrow" />
+
+            </RelativeLayout>
+
+            <!--View Security-->
+            <RelativeLayout
+                android:id="@+id/menuSecurity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/minicon_security" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toEndOf="@+id/profileImage"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mulish_bold"
+                        android:text="Update Email and Password"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/grayish"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/mulish"
+                        android:text="Change user info,  emergency contact"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="1dp"
+                    android:src="@drawable/minicon_arrow" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

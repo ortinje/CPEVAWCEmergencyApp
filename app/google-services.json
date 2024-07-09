@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "401500959258",
+    "project_id": "emergency-app-c3a7c",
+    "storage_bucket": "emergency-app-c3a7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401500959258:android:cfd02bfa6853ce611c57a3",
+        "android_client_info": {
+          "package_name": "com.bscpe.cpevawcemergencyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAKsQxLahFPWZBIdAgrigDCFVgRiUujK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

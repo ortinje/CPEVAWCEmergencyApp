@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CPEVAWCEmergencyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CPEVAWCEmergencyApp" parent="Base.Theme.CPEVAWCEmergencyApp" />
+
+    <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/rounded_edittext_background</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grayish</item>
+        <item name="android:fontFamily">@font/mulish_medium</item>
+    </style>
+
+    <style name="CustomInputLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/mulish</item>
+    </style>
+
+    <style name="MySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/grayish</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/mulish</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorAccent">@color/salmon_dark</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/salmon_lighter</item>
+    </style>
+
+    <style name="Navbar.font" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:color">@color/salmon_lighter</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/mulish</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mulish</item>
+    </style>
+
+    <style name="Header_01" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mulish_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/grayish</item>
+    </style>
+
+    <style name="Body" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/mulish_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+</resources>
